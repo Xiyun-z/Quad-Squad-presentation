@@ -74,7 +74,26 @@ class: left, top
 knitr::include_graphics("figs/Average-daily deaths.png")
 ```
 
+---
 
+## Top 5 countries with the highest daily death number ralate to COVID-19
+
+```{r out.width = '100%', echo = FALSE, fig.align="center"}
+knitr::include_graphics("figs/daily-deaths.png")
+```
+
+
+
+
+---
+
+
+#COVID-19 People fully-vaccinated 
+
+
+```{r out.width = '100%', echo = FALSE, fig.align="center"}
+knitr::include_graphics("figs/fully-vaccinated.png")
+```
 
 
 ---
