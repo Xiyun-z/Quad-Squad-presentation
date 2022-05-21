@@ -1,6 +1,6 @@
 ---
 title: "Project presentation"
-subtitle: "presentation"
+subtitle: "Research on COVID-19 Vccination"
 author: "Krisanat Anukarnsakulchularp,
              Kumar Vatsal,
              Xiyun Zhou,
@@ -26,61 +26,83 @@ library(datasets)
 ```
 
 
-class: center, middle
-![](https://media.giphy.com/media/OkJat1YNdoD3W/giphy.gif)
+class: left, top
+# Introduction
 
 
----
-class: center, middle
-# Hello!
-
-Dr Patricia Menéndez
-```{r out.width = '35%', echo = FALSE, fig.align="center"}
-knitr::include_graphics("figs/patricia.jpeg")
+```{r out.width = '100%', echo = FALSE, fig.align="center"}
+knitr::include_graphics("figs/daily-cases-covid-region.png")
 ```
 
-Lecturer Department of Econometric and Business Statistics.
-
-
-
-
 
 ---
-# Of course Yourselves too!
 
-![](figs/baim-hanif-pYWuOMhtc6k-unsplash.jpg)
-
-.tiny[<span>Photo by <a href="https://unsplash.com/@baim?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Baim Hanif</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>]
-
-
-
----
 class: left, top
-# This is an example of using boxes around txt
-.content-box-soft[ 
-- Understand the aims and structure of the unit
+
+#Research Questions:
+
+.content-box-duke-green[ 
+- .bold[How do death rates from COVID-19 differ between people who are vaccinated and those who are not?]
 ]
 
 .content-box-duke-green[ 
-* Explain the need for reproducible and collaborative practices
+- .bold[How do positive cases change relate to vaccination? ]
 ]
-.content-box-soft[ 
-* Introduce the main tools that we are going to use during the lectures/tutorials
+
+.content-box-duke-green[ 
+- .bold[How do   ]
 ]
+
+
+---
+
+class: left, top
+
+## Top 5 countries with the highest daily positive cases ralate to COVID-19
+
+```{r out.width = '100%', echo = FALSE, fig.align="center"}
+knitr::include_graphics("figs/cases.png")
+```
+
+
+---
+
+class: left, top
+
+#COVID-19 Average daily deaths
+
+
+```{r out.width = '90%', echo = FALSE, fig.align="center"}
+knitr::include_graphics("figs/Average-daily deaths.png")
+```
 
 
 
 ---
-class: left, top
 
-# Adding color to the text
+## Top 5 countries with the highest daily death number ralate to COVID-19
 
-- .green[ This is an example in green]
-- .red[ This is an example in green]
+```{r out.width = '100%', echo = FALSE, fig.align="center"}
+knitr::include_graphics("figs/daily-deaths.png")
+```
 
-- .bold[This is an example in bold]
 
-- you can also use markdown bold syntax **bold**
+
+
+---
+
+
+#COVID-19 People fully-vaccinated 
+
+
+```{r out.width = '100%', echo = FALSE, fig.align="center"}
+knitr::include_graphics("figs/fully-vaccinated.png")
+```
+
+
+
+
+
 
 
 

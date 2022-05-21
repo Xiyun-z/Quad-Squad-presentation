@@ -108,13 +108,13 @@ a, a > code {
 }
 .title-slide {
   background-image: url(virus.jpg);
-  background-size: cover;
+  background-size:cover;
 }
 .title-slide h1 {
   text-shadow: none;
-  color: 	#3b444b;
-  margin-left: +30pt;
-  margin-top: +5pt;
+  color: 	#ffffff;
+  margin-left: +50pt;
+  margin-top: +7pt;
 }
 .title-slide h2 {
   text-shadow: none;
@@ -222,7 +222,7 @@ body{
 }
 
 h1 {
-  color: #23395;
+  color: #23395; 
 }
 
 
