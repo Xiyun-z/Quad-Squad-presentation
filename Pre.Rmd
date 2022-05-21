@@ -52,6 +52,28 @@ class: left, top
 - .bold[How do   ]
 ]
 
+---
+
+class: left, top
+
+## Top 5 countries with the highest daily positive cases ralate to COVID-19
+
+```{r out.width = '100%', echo = FALSE, fig.align="center"}
+knitr::include_graphics("figs/cases.png")
+```
+
+
+---
+
+class: left, top
+
+#COVID-19 Average daily deaths
+
+
+```{r out.width = '90%', echo = FALSE, fig.align="center"}
+knitr::include_graphics("figs/Average-daily deaths.png")
+```
+
 
 
 
