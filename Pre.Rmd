@@ -34,7 +34,6 @@ class: left, top
 knitr::include_graphics("figs/daily-cases-covid-region.png")
 ```
 
-
 ---
 
 class: left, top
@@ -52,56 +51,6 @@ class: left, top
 .content-box-duke-green[ 
 - .bold[How do   ]
 ]
-
-
----
-
-class: left, top
-
-## Top 5 countries with the highest daily positive cases ralate to COVID-19
-
-```{r out.width = '100%', echo = FALSE, fig.align="center"}
-knitr::include_graphics("figs/cases.png")
-```
-
-
----
-
-class: left, top
-
-#COVID-19 Average daily deaths
-
-
-```{r out.width = '90%', echo = FALSE, fig.align="center"}
-knitr::include_graphics("figs/Average-daily deaths.png")
-```
-
-
-
----
-
-## Top 5 countries with the highest daily death number ralate to COVID-19
-
-```{r out.width = '100%', echo = FALSE, fig.align="center"}
-knitr::include_graphics("figs/daily-deaths.png")
-```
-
-
-
-
----
-
-
-#COVID-19 People fully-vaccinated 
-
-
-```{r out.width = '100%', echo = FALSE, fig.align="center"}
-knitr::include_graphics("figs/fully-vaccinated.png")
-```
-
-
-
-
 
 
 
