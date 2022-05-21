@@ -1,6 +1,6 @@
 ---
 title: "Project presentation"
-subtitle: "Research on COVID-19 Vccination"
+subtitle: "Research on COVID-19 Vaccination"
 author: "Krisanat Anukarnsakulchularp,
              Kumar Vatsal,
              Xiyun Zhou,
@@ -27,24 +27,64 @@ library(datasets)
 
 
 class: left, top
+
 # Background Introduction
 
-To bring this pandemic to an end, a large share of the world needs to be immune to the virus. The safest way to achieve this is with a vaccine. Vaccines are a technology that humanity has often relied on in the past to bring down the death toll of infectious diseases.
+- .bold[To bring this pandemic to an end, a large share of the world needs to be immune to the virus]
+
+- .bold[The safest way to achieve this is with a vaccine]
+
+- .bold[Vaccines are a technology that humanity has often relied on in the past to bring down the death toll of infectious diseases]
 
 
-```{r out.width = '70%', echo = FALSE, fig.align="center"}
-knitr::include_graphics("figs/daily-cases-covid-region.png")
-```
+
 
 ---
 
 class: left, top
 
-#Research Questions:
+###Daily new cases COVID-19 by region
+
+```{r out.width = '100%', echo = FALSE, fig.align="center"}
+knitr::include_graphics("figs/sum_daily-cases.png")
+```
+
+
+---
+
+class: left, top
+
+###COVID-19 Average daily deaths
+
+
+```{r out.width = '90%', echo = FALSE, fig.align="center"}
+knitr::include_graphics("figs/Average-daily deaths.png")
+```
+
+
+
+
+---
+
+
+###COVID-19 People fully-vaccinated rate by region
+
+
+```{r out.width = '100%', echo = FALSE, fig.align="center"}
+knitr::include_graphics("figs/barplot.png")
+
+```
+
+
+---
+
+class: left, top
+
+##Research Questions:
 
 .content-box-duke-green[ 
-- .bold[How do death rates from COVID-19 differ between people who are vaccinated and those who are not?]
-]
+- .bold[How do death rates from COVID-19 differ between people who are vaccinated and those who are not?] 
+] 
 
 .content-box-duke-green[ 
 - .bold[How do positive cases change relate to vaccination? ]
@@ -54,52 +94,12 @@ class: left, top
 - .bold[How do   ]
 ]
 
----
-
-class: left, top
-
-## Top 5 countries with the highest daily positive cases ralate to COVID-19
-
-```{r out.width = '100%', echo = FALSE, fig.align="center"}
-knitr::include_graphics("figs/cases.png")
-```
-
-
----
-
-class: left, top
-
-#COVID-19 Average daily deaths
-
-
-```{r out.width = '90%', echo = FALSE, fig.align="center"}
-knitr::include_graphics("figs/Average-daily deaths.png")
-```
-
----
-
-## Top 5 countries with the highest daily death number ralate to COVID-19
-
-```{r out.width = '100%', echo = FALSE, fig.align="center"}
-knitr::include_graphics("figs/daily-deaths.png")
-```
 
 
 
 
 ---
-
-
-#COVID-19 People fully-vaccinated 
-
-
-```{r out.width = '100%', echo = FALSE, fig.align="center"}
-knitr::include_graphics("figs/fully-vaccinated.png")
-```
-
-
----
-class: center, top
+class: center, top 
 
 # Unit Structure
 
