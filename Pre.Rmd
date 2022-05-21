@@ -82,58 +82,62 @@ class: left, top
 
 - you can also use markdown bold syntax **bold**
 
+---
+class: center, top
 
+# How does vaccination impact new cases
+
+- .green[.bold[Trend] of news cases and people fully vaccinated]
+
+- .green[How new cases .bold[correlated] with number of people fully vaccinated]
+
+- .green[mean value of new cases and daily new fully vaccinated people]
 
 ---
 class: center, top
 
-# Unit Structure
 
 
+.pull-top[ 
+## Trend of news cases and people fully vaccinated
 
-.pull-left[
-* Start with individual projects 
-.tiny[<span>Photo by <a href="https://unsplash.com/@firmbee?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">William Iven</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>]
-]
-.pull-left[
-```{r out.width = '50%', echo = FALSE}
-knitr::include_graphics("figs/william-iven-gcsNOsPEXfs-unsplash.jpg")
+] 
+
+
+.pull-bottom[
+```{r out.width = '100%', echo = FALSE}
+knitr::include_graphics("pre_files/figure-html/vax-new-cases.png")
 ```
 
 ]
 
-.pull-left[
- * Will continue with group projects
- 
- .tiny[<span>Photo by <a href="https://unsplash.com/@homajob?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Scott Graham</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>]
+---
+class: left, middle
 
-]
-.pull-left[
-```{r out.width = '50%', echo = FALSE}
-knitr::include_graphics("figs/helloquence-5fNmWej4tAA-unsplash.jpg")
+.pull-top[ 
+##How new cases .bold[correlated] with number of people fully vaccinated
+
+] 
+
+
+.pull-bottom[
+```{r out.width = '100%', echo = FALSE}
+knitr::include_graphics("pre_files/figure-html/correlation-vax-case.png")
 ```
-
-
 ]
+---
+class: left, middle
+.pull-top[ 
+## mean value of new cases and daily new fully vaccinated people
 
-.pull-left[
- * Finally, as a class, we will produce a join project
- 
- .tiny[<span>Photo by <a href="https://unsplash.com/@baim?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Baim Hanif</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>]
-]
-.pull-left[
-```{r out.width = '50%', echo = FALSE}
-knitr::include_graphics("figs/baim-hanif-pYWuOMhtc6k-unsplash.jpg")
+] 
+
+
+.pull-bottom[
+```{r out.width = '100%', echo = FALSE}
+knitr::include_graphics("pre_files/tab/mean-vax-cases.png")
 ```
-
 ]
-
-
-
-
-
-
-
 ---
 class: left, middle
 # Different headings
@@ -245,57 +249,8 @@ ggplot(data = penguins,
 
 
 
----
-class:  left, top
-# Adding figure --> another way
-
-.right-column[
-```{r  penguins3 , eval = FALSE, warning = FALSE, message = FALSE}
-ggplot(data = penguins, 
-       aes(x = flipper_length_mm,
-           y = body_mass_g)) +
-  geom_point(aes(color = species,
-                 shape = species),
-             size = 2) +
-  scale_color_manual(
-    values = c("darkorange",
-               "darkorchid",
-               "cyan4"))
-
-```
-]
 
 
-.left-column[
-```{r  penguins4 , eval = TRUE, echo = FALSE, warning = FALSE, message = FALSE}
-ggplot(data = penguins,
-       aes(x = flipper_length_mm,
-           y = body_mass_g)) +
-  geom_point(aes(color = species,
-                 shape = species),
-             size = 2) +
-  scale_color_manual(
-    values = c("darkorange",
-               "darkorchid",
-               "cyan4"))
-
-```
-]
-
-
----
-# Tables
-
-
-```{r}
-iris2 <- head(iris)
-knitr::kable(iris2,
-             col.names = gsub("[.]", " ",
-                              names(iris)))
-
-```
-
----
 
 ```{r endslide, child="EndSlide/endslide.Rmd"}
 ```  
