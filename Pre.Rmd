@@ -30,47 +30,10 @@ library(bookdown)
 
 class: center, middle
 ![](https://media.giphy.com/media/OkJat1YNdoD3W/giphy.gif)
-
----
-class: left, top
-# This is an example of using boxes around txt
-.content-box-soft[  ]
-
-.content-box-duke-green[ ]
-.content-box-soft[ ]
-
-
-
----
-class: left, top
-
-# Adding color to the text
-
-- .green[ This is an example in green]
-- .red[ This is an example in green]
-
-- .bold[This is an example in bold]
-
-- you can also use markdown bold syntax **bold**
-
-                                                                                                              
-
-
-
-
-
-
-```{r }
+```{r message=FALSE,warning=FALSE}
 data <- read.csv(here::here("Data/owid-covid-data.csv"))
 
 ```
-
-
-
-
-
-
-
 
 
 ---
@@ -79,7 +42,7 @@ class: left, top
 # Average daily vaccinations and deaths for the countries with highest death rates.
 
 
-```{r echo=FALSE}
+```{r echo=FALSE, message=FALSE, warning=FALSE}
 data2 <- data %>% 
   filter(location %in% c("United States","Brazil","India","Russia","Mexico")) %>% 
   select(location,continent,date,people_fully_vaccinated,new_deaths,new_vaccinations,new_cases,total_cases,population)
@@ -100,9 +63,14 @@ table1 <- data2 %>%
 
 ---
 
-```{r fig.cap="Relationship between new deaths and vaccination status "}
+class: left, top
+
+# Relationship between new deaths and vaccination status
+
+
+```{r fig.cap="Relationship between new deaths and vaccination status " , echo=FALSE, message=FALSE,warning=FALSE}
 ggplot(data2, aes(x= people_fully_vaccinated, 
-                  y = new_deaths)) + geom_point() +
+                  y = new_deaths, color = location)) + geom_point() +
   facet_wrap(~location, scales = "free" )+
   theme_dark() +
   theme(axis.text.x = element_text(angle = 45,hjust = 1)) +
