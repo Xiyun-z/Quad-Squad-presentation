@@ -1,4 +1,3 @@
-
 ---
 title: "Project presentation"
 subtitle: "Research on COVID-19 Vaccination"
@@ -28,6 +27,7 @@ library(knitr)
 library(kableExtra)
 library(bookdown)
 ```
+
 
 class: left, top
 
@@ -96,7 +96,36 @@ class: left, top
 - .bold[How do death rates from COVID-19 differ between people who are vaccinated and those who are not?]
 ]
 
+---
 
+# Stringency Index
+
+- .red[The higher score indicates a stricter response (i.e. 100 = strictest response)]
+
+- Average of school closures; workplace closures; cancellation of public events; restrictions on public gatherings; 
+  closures of public transport; stay-at-home requirements; public information campaigns; restrictions on internal movements; 
+  and international travel controls.
+
+---
+
+### Stringency Index
+
+
+```{r out.width = '80%', echo = FALSE}
+knitr::include_graphics("figs/stringency_index_overtime.png")
+```
+
+
+- Each continent has a response to COVID-19 at a difference time (WHO declared outbreak, first identified in China)
+- A spike in 2020-04 (WHO declared COVID-19 as pandemic on 11 March)
+
+---
+
+```{r out.width = '50%', echo = FALSE}
+knitr::include_graphics("figs/relationship_totalc_si.png")
+```
+
+- Non-linear relationship (it take times for the response to have an affect)
 
 ---
 
@@ -178,8 +207,6 @@ knitr::include_graphics("figs/graph.png")
 
 
 
-
----
 
 ```{r endslide, child="EndSlide/endslide.Rmd"}
 ```

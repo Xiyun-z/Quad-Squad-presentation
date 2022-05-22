@@ -11,18 +11,18 @@
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
-.title[
 # Project presentation
+<<<<<<< HEAD
 ]
 .subtitle[
 ## Research on COVID-19 Vaccination
 ]
 .author[
+=======
+## presentation
+>>>>>>> KA
 ### Krisanat Anukarnsakulchularp, Kumar Vatsal, Xiyun Zhou, Xinyu Hu
-]
-.institute[
 ### Department of Econometrics and Business Statistics
-]
 
 ---
 
@@ -134,8 +134,49 @@ class: left, top
 ] 
 
 
+<<<<<<< HEAD
 .pull-middle[
 &lt;img src="pre_files/tab/mean-vax-cases.png" width="100%" style="display: block; margin: auto;" /&gt;
+=======
+```r
+penguins %&gt;%
+  dplyr::select(body_mass_g,
+                ends_with("_mm")
+                ) %&gt;%
+  glimpse()
+```
+
+```
+## Rows: 344
+## Columns: 4
+## $ body_mass_g       &lt;int&gt; 3750, 3800, 3250, NA, 3450, 3650, 3625, 4675, 3475, ~
+## $ bill_length_mm    &lt;dbl&gt; 39.1, 39.5, 40.3, NA, 36.7, 39.3, 38.9, 39.2, 34.1, ~
+## $ bill_depth_mm     &lt;dbl&gt; 18.7, 17.4, 18.0, NA, 19.3, 20.6, 17.8, 19.6, 18.1, ~
+## $ flipper_length_mm &lt;int&gt; 181, 186, 195, NA, 193, 190, 181, 195, 193, 190, 186~
+```
+
+
+
+
+---
+class:  left, top
+# Adding figure
+
+.pull-left1[
+
+```r
+ggplot(data = penguins, 
+       aes(x = flipper_length_mm,
+           y = body_mass_g)) +
+  geom_point(aes(color = species,
+                 shape = species),
+             size = 2) +
+  scale_color_manual(
+    values = c("darkorange",
+               "darkorchid",
+               "cyan4"))
+```
+>>>>>>> KA
 ]
 
 .pull-bottom[
@@ -163,6 +204,30 @@ class: left, top
 
 
 
+
+---
+
+### Stringency Index
+
+- .red[The higher score indicates a stricter response (i.e. 100 = strictest response)]
+- Average of school closures; workplace closures; cancellation of public events; restrictions on public gatherings; 
+  closures of public transport; stay-at-home requirements; public information campaigns; restrictions on internal movements; 
+  and international travel controls.
+
+---
+
+### Stringency Index
+
+
+&lt;img src="figs/stringency_index_overtime.png" width="80%" /&gt;
+
+
+- Each continent has a response to COVID-19 at a difference time (WHO declared outbreak, first identified in China)
+- A spike in 2020-04 (WHO declared COVID-19 as pandemic)
+
+---
+
+&lt;img src="figs/relationship_totalc_si.png" width="50%" /&gt;
 
 ---
 
@@ -275,19 +340,6 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     deleted = true;
   });
 })();
-// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
-// screen reader (see PR #262)
-(function(d) {
-  let res = {};
-  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
-    const t = tr.querySelector('td:nth-child(2)').innerText;
-    tr.querySelectorAll('td:first-child .key').forEach(key => {
-      const k = key.innerText;
-      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
-    });
-  });
-  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
-})(document);
 (function() {
   "use strict"
   // Replace <script> tags in slides area to make them executable

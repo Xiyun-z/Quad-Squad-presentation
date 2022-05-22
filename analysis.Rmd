@@ -1,0 +1,49 @@
+---
+title: "Untitled"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+```
+
+```{r}
+dat <- read_csv(here::here("Data/owid-covid-data.csv")) %>%
+  select(continent, date, total_cases, new_cases, total_deaths, new_deaths, stringency_index) %>%
+  na.omit()
+
+dat
+```
+
+- Since the total cases is highly skewed variable we used a log transformation to symmetrizes it.
+
+```{r}
+dat %>%
+  select(continent, date, stringency_index) %>%
+  group_by(month = lubridate::floor_date(date, "month"), continent) %>%
+  summarise(mean = mean(stringency_index),
+            .groups = 'drop') %>%
+  ggplot(aes(x = month, y = mean, colour = continent)) +
+  geom_line() +
+  theme_bw() +
+  labs(x = "Time", y = "Stringency Index", color = "Continent", title = "The stingency index overtime")
+```
+
+https://en.wikipedia.org/wiki/Severe_acute_respiratory_syndrome_coronavirus_2#:~:text=The%20World%20Health%20Organization%20declared,on%2011%20March%202020.
+
+```{r}
+dat %>%
+  select(continent, total_cases, stringency_index) %>%
+  ggplot(aes(x = stringency_index, y = log(total_cases))) +
+  geom_point() +
+  geom_smooth() +
+  facet_wrap(~continent, scales = "free") +
+  labs(x = "Stringency Index", y = "Total Cases (log transformation)", 
+       title = "Relationship between Total Cases and Stringency index")
+```
+
+
