@@ -34,91 +34,20 @@ class: center, middle, inverse, title-slide
 
 
 class: center, middle
-![](https://media.giphy.com/media/OkJat1YNdoD3W/giphy.gif)
 
+### Trend of news cases and people fully vaccinated
 
+.pull-center[
+&lt;img src="pre_files/figure-html/vax-new-cases.png" width="80%" /&gt;
+]
+
+- .content-box-soft[New cases in United states boosted in Jan 2022 but not as boosted as their vaccination.]
+- .content-box-soft[India did the best in vaccination and other countries stays regular.]
 ---
 class: center, middle
-# Hello!
-
-Dr Patricia Menéndez
-&lt;img src="figs/patricia.jpeg" width="35%" style="display: block; margin: auto;" /&gt;
-
-Lecturer Department of Econometric and Business Statistics.
-
-
-
-
-
----
-# Of course Yourselves too!
-
-![](figs/baim-hanif-pYWuOMhtc6k-unsplash.jpg)
-
-.tiny[&lt;span&gt;Photo by &lt;a href="https://unsplash.com/@baim?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText"&gt;Baim Hanif&lt;/a&gt; on &lt;a href="https://unsplash.com/?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText"&gt;Unsplash&lt;/a&gt;&lt;/span&gt;]
-
-
-
----
-class: left, top
-# This is an example of using boxes around txt
-.content-box-soft[ 
-- Understand the aims and structure of the unit
-]
-
-.content-box-duke-green[ 
-* Explain the need for reproducible and collaborative practices
-]
-.content-box-soft[ 
-* Introduce the main tools that we are going to use during the lectures/tutorials
-]
-
-
-
----
-class: left, top
-
-# Adding color to the text
-
-- .green[ This is an example in green]
-- .red[ This is an example in green]
-
-- .bold[This is an example in bold]
-
-- you can also use markdown bold syntax **bold**
-
----
-class: center, top
-
-# How does vaccination impact new cases
-
-- .green[.bold[Trend] of news cases and people fully vaccinated]
-
-- .green[How new cases .bold[correlated] with number of people fully vaccinated]
-
-- .green[mean value of new cases and daily new fully vaccinated people]
-
----
-class: center, top
-
-
 
 .pull-top[ 
-## Trend of news cases and people fully vaccinated
-
-] 
-
-
-.pull-bottom[
-&lt;img src="pre_files/figure-html/vax-new-cases.png" width="100%" /&gt;
-
-]
-
----
-class: left, middle
-
-.pull-top[ 
-##How new cases .bold[correlated] with number of people fully vaccinated
+###How new cases .bold[correlated] with number of people fully vaccinated
 
 ] 
 
@@ -126,127 +55,27 @@ class: left, middle
 .pull-bottom[
 &lt;img src="pre_files/figure-html/correlation-vax-case.png" width="100%" /&gt;
 ]
+
+
+- .content-box-soft[no significant linear relationship between vaccination and cases.]
+
 ---
 class: left, middle
 .pull-top[ 
-## mean value of new cases and daily new fully vaccinated people
+### Mean value of new cases and daily new fully vaccinated people
 
 ] 
 
 
-.pull-bottom[
+.pull-middle[
 &lt;img src="pre_files/tab/mean-vax-cases.png" width="100%" /&gt;
 ]
----
-class: left, middle
-# Different headings
-.green[.bold[Example]] 
-### Smaller heading
-* My section
 
-### Another samller heading
-.content-box-duke-green[ 
-
-  - You will get instructions with the tasks that need to be completed during the tutorial.
-  - Fan and Naveen will be there to guide and help you through the activities.
-  - Tutorials also provide a good opportunity for you to discuss and work with your peers.
+.pull-bottom[
+- .content-box-soft[India has highest daily new fully vaccinated people ]
+- .content-box-soft[United States has highest daily new cases ]
 ]
-
-
 ---
-
-class: left, middle
-# Using also LaTex
-
-.content-box-soft[ 
-- .green[.bold[Patricia]] `\(\leftarrow\)` hello hello ]
-
-- `\(\sum_{i = 1}^{\infty} x_i\)`
-
-**Bolding using markdown**
-
----
-class: centre, middle
-# Questions?
-
-
-
----
-class:  center, top
-
-# Let's get started with gifs
-
-
-![](https://media.giphy.com/media/3ohc1fpw7snh6omAaQ/giphy.gif)
-
-
-
-
-
----
-class: left, top
-
-# Adding code
-
-
-```r
-c(1:10)
-```
-
-```
-##  [1]  1  2  3  4  5  6  7  8  9 10
-```
-
-
----
-class: left, top
-# Adding code
-
-
-```r
-penguins %&gt;%
-  dplyr::select(body_mass_g,
-                ends_with("_mm")
-                ) %&gt;%
-  glimpse()
-```
-
-```
-## Rows: 344
-## Columns: 4
-## $ body_mass_g       &lt;int&gt; 3750, 3800, 3250, NA, 3450, 3650, 3625, 4675, 3475, …
-## $ bill_length_mm    &lt;dbl&gt; 39.1, 39.5, 40.3, NA, 36.7, 39.3, 38.9, 39.2, 34.1, …
-## $ bill_depth_mm     &lt;dbl&gt; 18.7, 17.4, 18.0, NA, 19.3, 20.6, 17.8, 19.6, 18.1, …
-## $ flipper_length_mm &lt;int&gt; 181, 186, 195, NA, 193, 190, 181, 195, 193, 190, 186…
-```
-
-
-
-
----
-class:  left, top
-# Adding figure
-
-.pull-left1[
-
-```r
-ggplot(data = penguins, 
-       aes(x = flipper_length_mm,
-           y = body_mass_g)) +
-  geom_point(aes(color = species,
-                 shape = species),
-             size = 2) +
-  scale_color_manual(
-    values = c("darkorange",
-               "darkorchid",
-               "cyan4"))
-```
-]
-
-
-.pull-right1[
-![](Pre_files/figure-html/penguins2 -1.png)&lt;!-- --&gt;
-]
 
 
 
@@ -269,7 +98,7 @@ count: false
 
 .bottom_abs.width100[
 
-Lecturer: Krisanat Anukarnsakulchularp, Kumar Vatsal, Xiyun Zhou, Xinyu Hu
+Contributors: Krisanat Anukarnsakulchularp, Kumar Vatsal, Xiyun Zhou, Xinyu Hu
 
 Department of Econometrics and Business Statistics&lt;br&gt;
 
