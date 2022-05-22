@@ -1,6 +1,6 @@
 ---
 title: "Project presentation"
-subtitle: "presentation"
+subtitle: "Research on COVID-19 Vaccination"
 author: "Krisanat Anukarnsakulchularp,
              Kumar Vatsal,
              Xiyun Zhou,
@@ -26,276 +26,84 @@ library(datasets)
 ```
 
 
-class: center, middle
-![](https://media.giphy.com/media/OkJat1YNdoD3W/giphy.gif)
+class: left, top
 
+# Background Introduction
 
----
-class: center, middle
-# Hello!
+- .bold[To bring this pandemic to an end, a large share of the world needs to be immune to the virus]
 
-Dr Patricia Menéndez
-```{r out.width = '35%', echo = FALSE, fig.align="center"}
-knitr::include_graphics("figs/patricia.jpeg")
+- .bold[The safest way to achieve this is with a vaccine]
+
+- .bold[Vaccines are a technology that humanity has often relied on in the past to bring down the death toll of infectious diseases]
+
+```{r out.width = '50%', echo = FALSE, fig.align="center"}
+knitr::include_graphics("figs/coronavirus-data-explorer.png") 
 ```
 
-Lecturer Department of Econometric and Business Statistics.
-
-
-
 
 
 ---
-# Of course Yourselves too!
 
-![](figs/baim-hanif-pYWuOMhtc6k-unsplash.jpg)
-
-.tiny[<span>Photo by <a href="https://unsplash.com/@baim?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Baim Hanif</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>]
-
-
-
----
 class: left, top
-# This is an example of using boxes around txt
-.content-box-soft[ 
-- Understand the aims and structure of the unit
+
+####Daily new cases COVID-19 by region
+
+```{r out.width = '100%', echo = FALSE, fig.align="center"}
+knitr::include_graphics("figs/sum_daily-cases.png") 
+```
+- .content-box-soft[Three times breakout over this period]
+- .content-box-soft[Europe always has the highest daily cases]
+
+---
+
+class: left, top
+
+####COVID-19 Average daily deaths 
+
+
+```{r out.width = '100%', echo = FALSE, fig.align="center"}
+knitr::include_graphics("figs/Average-daily deaths.png")
+```
+
+
+---
+
+
+###COVID-19 People fully-vaccinated rate by region
+
+
+```{r out.width = '100%', echo = FALSE, fig.align="center"}
+knitr::include_graphics("figs/barplot.png")
+
+```
+
+---
+
+class: left, top
+
+##Research Questions:
+
+.content-box-duke-green[ 
+- .bold[Effects of government policies on the spread of COVID-19 worldwide]
 ]
 
 .content-box-duke-green[ 
-* Explain the need for reproducible and collaborative practices
-]
-.content-box-soft[ 
-* Introduce the main tools that we are going to use during the lectures/tutorials
-]
+- .bold[How do death rates from COVID-19 differ between people who are vaccinated and those who are not?] 
+] 
 
-
-
----
-class: left, top
-
-# Adding color to the text
-
-- .green[ This is an example in green]
-- .red[ This is an example in green]
-
-- .bold[This is an example in bold]
-
-- you can also use markdown bold syntax **bold**
-
-
-
----
-class: center, top
-
-# Unit Structure
-
-
-
-.pull-left[
-* Start with individual projects 
-.tiny[<span>Photo by <a href="https://unsplash.com/@firmbee?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">William Iven</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>]
-]
-.pull-left[
-```{r out.width = '50%', echo = FALSE}
-knitr::include_graphics("figs/william-iven-gcsNOsPEXfs-unsplash.jpg")
-```
-
-]
-
-.pull-left[
- * Will continue with group projects
- 
- .tiny[<span>Photo by <a href="https://unsplash.com/@homajob?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Scott Graham</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>]
-
-]
-.pull-left[
-```{r out.width = '50%', echo = FALSE}
-knitr::include_graphics("figs/helloquence-5fNmWej4tAA-unsplash.jpg")
-```
-
-
-]
-
-.pull-left[
- * Finally, as a class, we will produce a join project
- 
- .tiny[<span>Photo by <a href="https://unsplash.com/@baim?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Baim Hanif</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>]
-]
-.pull-left[
-```{r out.width = '50%', echo = FALSE}
-knitr::include_graphics("figs/baim-hanif-pYWuOMhtc6k-unsplash.jpg")
-```
-
-]
-
-
-
-
-
-
-
----
-class: left, middle
-# Different headings
-.green[.bold[Example]] 
-### Smaller heading
-* My section
-
-### Another samller heading
 .content-box-duke-green[ 
-
-  - You will get instructions with the tasks that need to be completed during the tutorial.
-  - Fan and Naveen will be there to guide and help you through the activities.
-  - Tutorials also provide a good opportunity for you to discuss and work with your peers.
+- .bold[How do positive cases change relate to vaccination? ]
 ]
 
-
 ---
 
-class: left, middle
-# Using also LaTex
-
-.content-box-soft[ 
-- .green[.bold[Patricia]] $\leftarrow$ hello hello ]
-
-- $\sum_{i = 1}^{\infty} x_i$
-
-**Bolding using markdown**
-
----
-class: centre, middle
-# Questions?
-
-
-
----
-class:  center, top
-
-# Let's get started with gifs
-
-
-![](https://media.giphy.com/media/3ohc1fpw7snh6omAaQ/giphy.gif)
 
 
 
 
 
----
-class: left, top
-
-# Adding code
-
-```{r }
-c(1:10)
-
-```
 
 
----
-class: left, top
-# Adding code
-
-```{r }
-penguins %>%
-  dplyr::select(body_mass_g,
-                ends_with("_mm")
-                ) %>%
-  glimpse()
-```
-
-
-
-
----
-class:  left, top
-# Adding figure
-
-.pull-left1[
-```{r  penguins , eval = FALSE, warning = FALSE, message = FALSE}
-ggplot(data = penguins, 
-       aes(x = flipper_length_mm,
-           y = body_mass_g)) +
-  geom_point(aes(color = species,
-                 shape = species),
-             size = 2) +
-  scale_color_manual(
-    values = c("darkorange",
-               "darkorchid",
-               "cyan4"))
-
-```
-]
-
-
-.pull-right1[
-```{r  penguins2 , eval = TRUE, echo = FALSE, warning = FALSE, message = FALSE}
-ggplot(data = penguins,
-       aes(x = flipper_length_mm,
-           y = body_mass_g)) +
-  geom_point(aes(color = species,
-                 shape = species),
-             size = 2) +
-  scale_color_manual(
-    values = c("darkorange",
-               "darkorchid",
-               "cyan4"))
-
-```
-]
-
-
-
----
-class:  left, top
-# Adding figure --> another way
-
-.right-column[
-```{r  penguins3 , eval = FALSE, warning = FALSE, message = FALSE}
-ggplot(data = penguins, 
-       aes(x = flipper_length_mm,
-           y = body_mass_g)) +
-  geom_point(aes(color = species,
-                 shape = species),
-             size = 2) +
-  scale_color_manual(
-    values = c("darkorange",
-               "darkorchid",
-               "cyan4"))
-
-```
-]
-
-
-.left-column[
-```{r  penguins4 , eval = TRUE, echo = FALSE, warning = FALSE, message = FALSE}
-ggplot(data = penguins,
-       aes(x = flipper_length_mm,
-           y = body_mass_g)) +
-  geom_point(aes(color = species,
-                 shape = species),
-             size = 2) +
-  scale_color_manual(
-    values = c("darkorange",
-               "darkorchid",
-               "cyan4"))
-
-```
-]
-
-
----
-# Tables
-
-
-```{r}
-iris2 <- head(iris)
-knitr::kable(iris2,
-             col.names = gsub("[.]", " ",
-                              names(iris)))
-
-```
-
----
 
 ```{r endslide, child="EndSlide/endslide.Rmd"}
 ```  
