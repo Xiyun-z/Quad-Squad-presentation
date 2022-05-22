@@ -107,23 +107,23 @@ a, a > code {
   color: #E9EBEE;
 }
 .title-slide {
-  background-image: url(virus.jpg);
+  background-image: url(virus_2.jpg);
   background-size: cover;
 }
 .title-slide h1 {
   text-shadow: none;
-  color: 	#f28124;
-  margin-left: +50pt;
+  color: #ffffff;
+  margin-left: +30pt;
   margin-top: +3pt;
 }
 .title-slide h2 {
   text-shadow: none;
-  color: #f28124;
+  color: #ffffff;
   margin-left: +30pt;
 }
 .title-slide h3 {
   text-shadow: none;
-  color: #f28124;
+  color: #ffffff;
   margin-left: +30pt;
 }
 .title-slide .remark-slide-number {
@@ -282,8 +282,8 @@ h1 {
 
 .content-box-blue {
     /* set opacity in last decimal value of rgba */
-    background-color: rgb(51,153,153);
-    background-color: rgba(51,153,153,.85);
+    background-color: rgb(131,223,246);
+    background-color: rgba(131,223,246,.75);
 
 }
 

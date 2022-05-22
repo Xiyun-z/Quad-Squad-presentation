@@ -12,15 +12,7 @@
 class: center, middle, inverse, title-slide
 
 # Project presentation
-<<<<<<< HEAD
-]
-.subtitle[
 ## Research on COVID-19 Vaccination
-]
-.author[
-=======
-## presentation
->>>>>>> KA
 ### Krisanat Anukarnsakulchularp, Kumar Vatsal, Xiyun Zhou, Xinyu Hu
 ### Department of Econometrics and Business Statistics
 
@@ -33,9 +25,10 @@ class: center, middle, inverse, title-slide
 
 
 
+
 class: left, top
 
-# Background Introduction
+## Background Introduction
 
 - .bold[To bring this pandemic to an end, a large share of the world needs to be immune to the virus]
 
@@ -49,27 +42,28 @@ class: left, top
 
 class: left, top
 
-####Daily new cases COVID-19 by region
+## Daily new cases COVID-19
 
-&lt;img src="figs/sum_daily-cases.png" width="100%" style="display: block; margin: auto;" /&gt;
-- .content-box-soft[Three times breakout over this period]
+- .content-box-soft[Three times breakout over the period]
+
 - .content-box-soft[Europe always has the highest daily cases]
+
+&lt;img src="figs/sum_daily-cases.png" width="90%" style="display: block; margin: auto;" /&gt;
 
 ---
 
 class: left, top
 
-####COVID-19 Average daily deaths 
+## COVID-19 Daily deaths 
 
-
-&lt;img src="figs/Average-daily deaths.png" width="100%" style="display: block; margin: auto;" /&gt;
+&lt;img src="figs/Average-daily deaths.png" width="95%" style="display: block; margin: auto;" /&gt;
 
 
 ---
 
+class: left, top
 
-###COVID-19 People fully-vaccinated rate by region
-
+## COVID-19 Vaccination rate
 
 &lt;img src="figs/barplot.png" width="100%" style="display: block; margin: auto;" /&gt;
 
@@ -77,7 +71,7 @@ class: left, top
 
 class: left, top
 
-##Research Questions:
+## Research Questions:
 
 .content-box-duke-green[ 
 - .bold[Effects of government policies on the spread of COVID-19 worldwide]
@@ -91,104 +85,81 @@ class: left, top
 - .bold[How do death rates from COVID-19 differ between people who are vaccinated and those who are not?]
 ]
 
+---
 
+class: left, top
+
+## Stringency Index
+
+- Before the availability of the vaccination, the most commons measures against the COVID-19 is the use of restriction
+
+- .red[The higher score indicates a stricter response (i.e. 100 = strictest response)]
+
+- Average of school closures; workplace closures; cancellation of public events; restrictions on public gatherings; 
+  closures of public transport; stay-at-home requirements; public information campaigns; restrictions on internal movements; 
+  and international travel controls.
 
 ---
 
 class: left, top
 
-### Trend of news cases and people fully vaccinated
+## Stringency Index
 
-.pull-center[
-&lt;img src="pre_files/figure-html/vax-new-cases.png" width="80%" style="display: block; margin: auto;" /&gt;
-]
+- .content-box-soft[Each continent has a response to COVID-19 at a different time (first identified in China, WHO declared an outbreak)]
 
+- .content-box-soft[A spike in 2020-04 (WHO declared COVID-19 as a pandemic on 11 March)]
 
+&lt;img src="figs/stringency_index_overtime.png" width="75%" style="display: block; margin: auto;" /&gt;
 
-- .content-box-soft[New cases in United states boosted in Jan 2022 but not as boosted as their vaccination.]
-- .content-box-soft[India did the best in vaccination and other countries stays regular.]
+---
 
+class: left, top
 
+## Government policies
+
+- .content-box-soft[Non-linear relationship (it takes time for the response to have an effect)]
+
+&lt;img src="figs/relationship_totalc_si.png" width="85%" style="display: block; margin: auto;" /&gt;
+
+---
+
+class: left, top
+
+## The trend of new cases and Fully vaccinated person
+
+- .content-box-soft[New cases in the United States boosted in Jan 2022 but were not as boosted as their vaccination]
+
+- .content-box-soft[India did the best in vaccination and other countries stayed regular]
+
+&lt;img src="pre_files/figure-html/vax-new-cases.png" width="75%" style="display: block; margin: auto;" /&gt;
 
 ---
 
 class: left,top
 
-.pull-top[ 
-###How new cases .bold[correlated] with number of people fully vaccinated
+## How new cases .bold[correlated] with the number of people fully vaccinated
 
-]
+- .content-box-soft[No significant linear relationship between vaccination and cases.]
 
-&lt;img src="pre_files/figure-html/correlation-vax-case.png" width="100%" style="display: block; margin: auto;" /&gt;
-
-
-- .content-box-soft[no significant linear relationship between vaccination and cases.]
-
-
+&lt;img src="pre_files/figure-html/correlation-vax-case.png" width="90%" style="display: block; margin: auto;" /&gt;
 
 ---
 
 class: left, top
-.pull-top[ 
-### Mean value of new cases and daily new fully vaccinated people
-] 
 
+## Mean value of new cases and daily new fully vaccinated people
 
-<<<<<<< HEAD
-.pull-middle[
+- .content-box-soft[India has the highest daily new fully vaccinated]
+
+- .content-box-soft[The United States has the highest daily new cases]
+
 &lt;img src="pre_files/tab/mean-vax-cases.png" width="100%" style="display: block; margin: auto;" /&gt;
-=======
-```r
-penguins %&gt;%
-  dplyr::select(body_mass_g,
-                ends_with("_mm")
-                ) %&gt;%
-  glimpse()
-```
-
-```
-## Rows: 344
-## Columns: 4
-## $ body_mass_g       &lt;int&gt; 3750, 3800, 3250, NA, 3450, 3650, 3625, 4675, 3475, ~
-## $ bill_length_mm    &lt;dbl&gt; 39.1, 39.5, 40.3, NA, 36.7, 39.3, 38.9, 39.2, 34.1, ~
-## $ bill_depth_mm     &lt;dbl&gt; 18.7, 17.4, 18.0, NA, 19.3, 20.6, 17.8, 19.6, 18.1, ~
-## $ flipper_length_mm &lt;int&gt; 181, 186, 195, NA, 193, 190, 181, 195, 193, 190, 186~
-```
-
-
-
-
----
-class:  left, top
-# Adding figure
-
-.pull-left1[
-
-```r
-ggplot(data = penguins, 
-       aes(x = flipper_length_mm,
-           y = body_mass_g)) +
-  geom_point(aes(color = species,
-                 shape = species),
-             size = 2) +
-  scale_color_manual(
-    values = c("darkorange",
-               "darkorchid",
-               "cyan4"))
-```
->>>>>>> KA
-]
-
-.pull-bottom[
-- .content-box-soft[India has highest daily new fully vaccinated people ]
-- .content-box-soft[United States has highest daily new cases ]
-]
-
 
 ---
 
-# Average daily vaccinations and deaths for the countries with highest death rates.
+class: left, top
 
+## Average daily vaccinations and deaths for the countries with highest death rates.
 
 &lt;img src="figs/table.png" width="100%" style="display: block; margin: auto;" /&gt;
 
@@ -196,38 +167,27 @@ ggplot(data = penguins,
 
 class: left, top
 
-###### Relationship between new deaths and vaccination status
+## Relationship between new deaths and vaccination status
 
-&lt;img src="figs/graph.png" width="100%" style="display: block; margin: auto;" /&gt;
+- .content-box-soft[We can see from the figures that vaccinations have a clear effect on the death rate.]
 
-- .content-box-soft[We can see from the above figures that vaccinations have a clear effect on the death rate. ]
-
-
-
+&lt;img src="figs/graph.png" width="90%" style="display: block; margin: auto;" /&gt;
 
 ---
 
-### Stringency Index
+## Conclusion
 
-- .red[The higher score indicates a stricter response (i.e. 100 = strictest response)]
-- Average of school closures; workplace closures; cancellation of public events; restrictions on public gatherings; 
-  closures of public transport; stay-at-home requirements; public information campaigns; restrictions on internal movements; 
-  and international travel controls.
+.content-box-duke-green[
+- .bold[The restriction policies can mitigate the spread of the virus. However, it does not protect us against it]
 
----
-
-### Stringency Index
-
-
-&lt;img src="figs/stringency_index_overtime.png" width="80%" /&gt;
-
-
-- Each continent has a response to COVID-19 at a difference time (WHO declared outbreak, first identified in China)
-- A spike in 2020-04 (WHO declared COVID-19 as pandemic)
+- .bold[The vaccination is the more preferable method, as it reduces the death rates]
+]
 
 ---
 
-&lt;img src="figs/relationship_totalc_si.png" width="50%" /&gt;
+class: center, middle
+
+&lt;img src="figs/thank-you.jpg" width="95%" style="display: block; margin: auto;" /&gt;
 
 ---
 

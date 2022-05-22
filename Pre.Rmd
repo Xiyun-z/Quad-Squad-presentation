@@ -31,7 +31,7 @@ library(bookdown)
 
 class: left, top
 
-# Background Introduction
+## Background Introduction
 
 - .bold[To bring this pandemic to an end, a large share of the world needs to be immune to the virus]
 
@@ -47,31 +47,32 @@ knitr::include_graphics("figs/coronavirus-data-explorer.png")
 
 class: left, top
 
-####Daily new cases COVID-19 by region
+## Daily new cases COVID-19
 
-```{r out.width = '100%', echo = FALSE, fig.align="center"}
+- .content-box-soft[Three times breakout over the period]
+
+- .content-box-soft[Europe always has the highest daily cases]
+
+```{r out.width = '90%', echo = FALSE, fig.align="center"}
 knitr::include_graphics("figs/sum_daily-cases.png") 
 ```
-- .content-box-soft[Three times breakout over this period]
-- .content-box-soft[Europe always has the highest daily cases]
 
 ---
 
 class: left, top
 
-####COVID-19 Average daily deaths 
+## COVID-19 Daily deaths 
 
-
-```{r out.width = '100%', echo = FALSE, fig.align="center"}
+```{r out.width = '95%', echo = FALSE, fig.align="center"}
 knitr::include_graphics("figs/Average-daily deaths.png")
 ```
 
 
 ---
 
+class: left, top
 
-###COVID-19 People fully-vaccinated rate by region
-
+## COVID-19 Vaccination rate
 
 ```{r out.width = '100%', echo = FALSE, fig.align="center"}
 knitr::include_graphics("figs/barplot.png")
@@ -82,7 +83,7 @@ knitr::include_graphics("figs/barplot.png")
 
 class: left, top
 
-##Research Questions:
+## Research Questions:
 
 .content-box-duke-green[ 
 - .bold[Effects of government policies on the spread of COVID-19 worldwide]
@@ -98,7 +99,11 @@ class: left, top
 
 ---
 
-# Stringency Index
+class: left, top
+
+## Stringency Index
+
+- Before the availability of the vaccination, the most commons measures against the COVID-19 is the use of restriction
 
 - .red[The higher score indicates a stricter response (i.e. 100 = strictest response)]
 
@@ -108,86 +113,75 @@ class: left, top
 
 ---
 
-### Stringency Index
+class: left, top
 
+## Stringency Index
 
-```{r out.width = '80%', echo = FALSE}
+- .content-box-soft[Each continent has a response to COVID-19 at a different time (first identified in China, WHO declared an outbreak)]
+
+- .content-box-soft[A spike in 2020-04 (WHO declared COVID-19 as a pandemic on 11 March)]
+
+```{r out.width = '75%', echo = FALSE, fig.align = "center"}
 knitr::include_graphics("figs/stringency_index_overtime.png")
 ```
-
-
-- Each continent has a response to COVID-19 at a difference time (WHO declared outbreak, first identified in China)
-- A spike in 2020-04 (WHO declared COVID-19 as pandemic on 11 March)
-
----
-
-```{r out.width = '50%', echo = FALSE}
-knitr::include_graphics("figs/relationship_totalc_si.png")
-```
-
-- Non-linear relationship (it take times for the response to have an affect)
 
 ---
 
 class: left, top
 
-### Trend of news cases and people fully vaccinated
+## Government policies
 
-.pull-center[
-```{r out.width = '80%', fig.align = "center", echo = FALSE}
+- .content-box-soft[Non-linear relationship (it takes time for the response to have an effect)]
+
+```{r out.width = '85%', echo = FALSE, fig.align = "center"}
+knitr::include_graphics("figs/relationship_totalc_si.png")
+```
+
+---
+
+class: left, top
+
+## The trend of new cases and Fully vaccinated person
+
+- .content-box-soft[New cases in the United States boosted in Jan 2022 but were not as boosted as their vaccination]
+
+- .content-box-soft[India did the best in vaccination and other countries stayed regular]
+
+```{r out.width = '75%', fig.align = "center", echo = FALSE}
 knitr::include_graphics("pre_files/figure-html/vax-new-cases.png")
 ```
-]
-
-
-
-- .content-box-soft[New cases in United states boosted in Jan 2022 but not as boosted as their vaccination.]
-- .content-box-soft[India did the best in vaccination and other countries stays regular.]
-
-
 
 ---
 
 class: left,top
 
-.pull-top[ 
-###How new cases .bold[correlated] with number of people fully vaccinated
+## How new cases .bold[correlated] with the number of people fully vaccinated
 
-]
+- .content-box-soft[No significant linear relationship between vaccination and cases.]
 
-```{r out.width = '100%', fig.align = "center", echo = FALSE}
+```{r out.width = '90%', fig.align = "center", echo = FALSE}
 knitr::include_graphics("pre_files/figure-html/correlation-vax-case.png")
 ```
-
-
-- .content-box-soft[no significant linear relationship between vaccination and cases.]
-
-
 
 ---
 
 class: left, top
-.pull-top[ 
-### Mean value of new cases and daily new fully vaccinated people
-] 
 
+## Mean value of new cases and daily new fully vaccinated people
 
-.pull-middle[
+- .content-box-soft[India has the highest daily new fully vaccinated]
+
+- .content-box-soft[The United States has the highest daily new cases]
+
 ```{r out.width = '100%',fig.align = "center", echo = FALSE}
 knitr::include_graphics("pre_files/tab/mean-vax-cases.png")
 ```
-]
-
-.pull-bottom[
-- .content-box-soft[India has highest daily new fully vaccinated people ]
-- .content-box-soft[United States has highest daily new cases ]
-]
-
 
 ---
 
-# Average daily vaccinations and deaths for the countries with highest death rates.
+class: left, top
 
+## Average daily vaccinations and deaths for the countries with highest death rates.
 
 ```{r out.width = '100%', echo = FALSE, fig.align="center"}
 knitr::include_graphics("figs/table.png") 
@@ -197,16 +191,33 @@ knitr::include_graphics("figs/table.png")
 
 class: left, top
 
-###### Relationship between new deaths and vaccination status
+## Relationship between new deaths and vaccination status
 
-```{r out.width = '100%', echo = FALSE, fig.align="center"}
+- .content-box-soft[We can see from the figures that vaccinations have a clear effect on the death rate.]
+
+```{r out.width = '90%', echo = FALSE, fig.align="center"}
 knitr::include_graphics("figs/graph.png") 
 ```
 
-- .content-box-soft[We can see from the above figures that vaccinations have a clear effect on the death rate. ]
+---
 
+## Conclusion
 
+.content-box-duke-green[
+- .bold[The restriction policies can mitigate the spread of the virus. However, it does not protect us against it]
 
+- .bold[The vaccination is the more preferable method, as it reduces the death rates]
+]
+
+---
+
+class: center, middle
+
+```{r out.width = '95%', echo = FALSE, fig.align="center"}
+knitr::include_graphics("figs/thank-you.jpg") 
+```
+
+---
 
 ```{r endslide, child="EndSlide/endslide.Rmd"}
 ```
