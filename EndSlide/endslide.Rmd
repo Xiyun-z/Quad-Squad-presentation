@@ -13,7 +13,7 @@ count: false
 
 .bottom_abs.width100[
 
-Lecturer: `r rmarkdown::metadata$author`
+Group Member: `r rmarkdown::metadata$author`
 
 Department of Econometrics and Business Statistics<br>
 
